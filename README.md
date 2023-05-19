@@ -9,7 +9,7 @@
     <img src="https://img.shields.io/badge/designed for-windows-blue?style=flat&logo=windows" alt="Designed for and Tested on Windows">
     <img src="https://img.shields.io/badge/version-1.3-blue" alt="ROTMG SSO v1.3">
     <img src="https://img.shields.io/badge/language-java-F58219?logo=oracle" alt="Written in Java 11">
-    <a target="_blank" href="https://github.com/Minimunch57/ROTMG-Screenshot-Organizer/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-GPU%203.0-yellow" alt="GNU GPL License v3.0"></a>
+    <a target="_blank" href="https://github.com/Minimunch57/ROTMG-Screenshot-Organizer/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-GPL%203.0-yellow" alt="GNU GPL License v3.0"></a>
 </p>
 
 ### Table of Contents
