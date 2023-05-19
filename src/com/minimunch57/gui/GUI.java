@@ -71,7 +71,7 @@ public class GUI extends JFrame {
 	 */
 	public GUI() {
 		//	Setup the JFrame
-		setTitle("ROTMG Screenshot Organizer");
+		setTitle("RotMG Screenshot Organizer");
 		setAlwaysOnTop(true);
 		setIconImage(Toolkit.getDefaultToolkit().getImage(GUI.class.getResource("/com/minimunch57/images/icon.png")));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -108,9 +108,6 @@ public class GUI extends JFrame {
 						else {
 							dropDate = modifiedTime.toString().substring(0, modifiedTime.toString().indexOf("T"));
 						}
-						System.out.println(creationTime.toString());
-						System.out.println(modifiedTime.toString());
-						System.out.println(dropDate);
 						
 						//	Prompt for the type of drop.
 						final String[] dropOptions = new String[]{"White Bag", "Orange Bag", "Skin Drop", "Blueprint Drop"};
@@ -165,5 +162,4 @@ public class GUI extends JFrame {
 		//	Display the Application
 		setVisible(true);
 	}
-
 }

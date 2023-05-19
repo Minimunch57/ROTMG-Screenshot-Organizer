@@ -16,8 +16,9 @@
 - [Description](https://github.com/Minimunch57/ROTMG-Screenshot-Organizer#-description)
 - [Features](https://github.com/Minimunch57/ROTMG-Screenshot-Organizer#-features)
 - [Images](https://github.com/Minimunch57/ROTMG-Screenshot-Organizer#-images)
-- [F.A.Q.](https://github.com/Minimunch57/ROTMG-Screenshot-Organizer#-f.a.q.)
-- [Future Plans/Ideas](https://github.com/Minimunch57/ROTMG-Screenshot-Organizer#-future%20plans%2Fideas)
+- [F.A.Q.](https://github.com/Minimunch57/ROTMG-Screenshot-Organizer#-faq)
+- [Future Plans/Ideas](https://github.com/Minimunch57/ROTMG-Screenshot-Organizer#%EF%B8%8F-future-plansideas)
+- [Additional Information](https://github.com/Minimunch57/ROTMG-Screenshot-Organizer#%E2%84%B9%EF%B8%8F-additional-information)
 
 ### 📃 Description
 Do you play [Realm of the Mad God](https://www.realmofthemadgod.com/)? Do you like keeping a screenshot archive of your best drops in the game?
@@ -31,7 +32,7 @@ The application will then use this information, coupled with the file's metadata
 The new name is meant to help with organization.
 Assuming all of your screenshots are contained within the same folder, they should display in chronological order.
 
-__For any questions, please scroll down to the [F.A.Q.](https://github.com/Minimunch57/ROTMG-Screenshot-Organizer#-f.a.q.)__
+__For any questions, please scroll down to the [F.A.Q.](https://github.com/Minimunch57/ROTMG-Screenshot-Organizer#-faq)__
 
 ### ✨ Features
 - Easily rename and reorganize screenshots of loot drops obtained in Realm of the Mad God (RotMG™).
