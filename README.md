@@ -59,7 +59,7 @@ __What is Realm of the Mad God?__
 
 >For more information on Realm of the Mad God, or RotMG™, please visit the [wiki](https://www.realmeye.com/wiki/realm-of-the-mad-god).
 
-__Why does the application always hovers over other windows?__
+__Why does the application always hover over other windows?__
 
 >It defaults to an  __Always on Top__  behavior which keeps it in front of other windows you have opened, even if those windows are in focus.
 This is usually preferred, as you are dragging and dropping files from your system's file explorer.
