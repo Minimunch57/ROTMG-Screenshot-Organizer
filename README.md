@@ -7,18 +7,18 @@
     An application to easily rename and organize screenshots of loot drops in Realm of the Mad God (RotMG™).
     <br><br>
     <img src="https://img.shields.io/badge/designed for-windows-blue?style=flat&logo=windows" alt="Designed for and Tested on Windows">
-    <img src="https://img.shields.io/badge/version-1.3-blue" alt="ROTMG SSO v1.3">
+    <img src="https://img.shields.io/badge/version-1.4-blue" alt="ROTMG SSO v1.4">
     <img src="https://img.shields.io/badge/language-java-F58219?logo=oracle" alt="Written in Java 11">
     <a target="_blank" href="https://github.com/Minimunch57/ROTMG-Screenshot-Organizer/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-GPL%203.0-yellow" alt="GNU GPL License v3.0"></a>
 </p>
 
 ### Table of Contents
-- [Description](https://github.com/Minimunch57/ROTMG-Screenshot-Organizer#-description)
-- [Features](https://github.com/Minimunch57/ROTMG-Screenshot-Organizer#-features)
-- [Images](https://github.com/Minimunch57/ROTMG-Screenshot-Organizer#-images)
-- [F.A.Q.](https://github.com/Minimunch57/ROTMG-Screenshot-Organizer#-faq)
-- [Future Plans/Ideas](https://github.com/Minimunch57/ROTMG-Screenshot-Organizer#%EF%B8%8F-future-plansideas)
-- [Additional Information](https://github.com/Minimunch57/ROTMG-Screenshot-Organizer#%E2%84%B9%EF%B8%8F-additional-information)
+- [Description](https://github.com/Minimunch57/ROTMG-Screenshot-Organizer?tab=readme-ov-file#-description)
+- [Features](https://github.com/Minimunch57/ROTMG-Screenshot-Organizer?tab=readme-ov-file#-features)
+- [Images](https://github.com/Minimunch57/ROTMG-Screenshot-Organizer?tab=readme-ov-file#-images)
+- [F.A.Q.](https://github.com/Minimunch57/ROTMG-Screenshot-Organizer?tab=readme-ov-file#-faq)
+- [Future Plans/Ideas](https://github.com/Minimunch57/ROTMG-Screenshot-Organizer?tab=readme-ov-file#%EF%B8%8F-future-plansideas)
+- [Additional Information](https://github.com/Minimunch57/ROTMG-Screenshot-Organizer?tab=readme-ov-file#%E2%84%B9%EF%B8%8F-additional-information)
 
 ### 📃 Description
 Do you play [Realm of the Mad God](https://www.realmofthemadgod.com/)? Do you like keeping a screenshot archive of your best drops in the game?
@@ -73,7 +73,7 @@ __Can I change the file renaming format? What about the date format?__
 ### ⏲️ Future Plans/Ideas
 These are not concrete plans. These changes may or may not be implemented in the future and are subject to change.
 For the most up-to-date information surrounding new features, please use the [Issues](https://github.com/Minimunch57/ROTMG-Screenshot-Organizer/issues) or [Projects](https://github.com/Minimunch57/ROTMG-Screenshot-Organizer/projects?query=is%3Aopen) pages.
-- [ ] Add more options for loot drop types (Red Bag, Purple Bag (?), Other)
+- [x] Add more options for loot drop types (Red Bag, Purple Bag (?), Other)
 - [ ] Automatic Detection
     - [ ] Detect which rare items dropped in the screenshot.
     - [ ] Detect which bag the loot dropped in.

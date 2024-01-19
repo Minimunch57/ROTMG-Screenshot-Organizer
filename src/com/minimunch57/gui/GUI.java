@@ -34,6 +34,9 @@ public class GUI extends JFrame {
 
 	/** The serial ID for this <tt>GUI</tt>. */
 	private static final long serialVersionUID = 2616296355176630665L;
+	/**	The default text shown on the <tt>GUI</tt>'s <tt>JTextField</tt>. */
+	private final String defaultText = "Drag and drop the screenshot here!";
+	
 	/** A <tt>JPanel</tt> used as the content pane. */
 	private JPanel contentPane;
 	/** A <tt>JTextField</tt> used to display text and receive file drag and drops. */
@@ -43,9 +46,8 @@ public class GUI extends JFrame {
 	private Timer timerTextReset = new Timer(2000, new ActionListener() {
 		@Override
 		public void actionPerformed(ActionEvent ae) {
-			SwingUtilities.invokeLater(() -> {
-				textField.setText("Drag and drop the screenshot here!");
-			});
+			//	Since this is a Swing Timer, code is already executing on the EDT. Reset the text after the timer delay.
+			textField.setText(defaultText);
 		}
 	});
 
@@ -93,7 +95,7 @@ public class GUI extends JFrame {
 				try {
 					evt.acceptDrop(DnDConstants.ACTION_REFERENCE);
 					@SuppressWarnings("unchecked")
-					List<File> droppedFiles = (List<File>) evt.getTransferable().getTransferData(DataFlavor.javaFileListFlavor);
+					final List<File> droppedFiles = (List<File>) evt.getTransferable().getTransferData(DataFlavor.javaFileListFlavor);
 					for (File file : droppedFiles) {
 						final String fileExt = file.getName().substring(file.getName().lastIndexOf("."));
 						final BasicFileAttributes attr = Files.readAttributes(file.toPath(), BasicFileAttributes.class);
@@ -102,7 +104,7 @@ public class GUI extends JFrame {
 						final ZonedDateTime creationTime = attr.creationTime().toInstant().atZone(ZoneId.systemDefault());
 						final ZonedDateTime modifiedTime = attr.lastModifiedTime().toInstant().atZone(ZoneId.systemDefault());
 						String dropDate = "0000-00-00";
-						if(creationTime.compareTo(modifiedTime)<=0) {
+						if(creationTime.compareTo(modifiedTime) <= 0) {
 							dropDate = creationTime.toString().substring(0, creationTime.toString().indexOf("T"));
 						}
 						else {
@@ -110,12 +112,12 @@ public class GUI extends JFrame {
 						}
 						
 						//	Prompt for the type of drop.
-						final String[] dropOptions = new String[]{"White Bag", "Orange Bag", "Skin Drop", "Blueprint Drop"};
-						int dropType = JOptionPane.showOptionDialog(null, "Which type of drop is it?", "Drop Type", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, dropOptions, dropOptions[0]);
+						final String[] dropOptions = new String[]{"White Bag", "Red Bag", "Orange Bag", "Skin Drop", "Blueprint Drop", "Egg Drop"};
+						int dropType = JOptionPane.showOptionDialog(null, "What type of drop is it?", "Drop Type", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, dropOptions, dropOptions[0]);
 						if(dropType != -1) {
 							//	Prompt for the item name.
-							final String itemName = JOptionPane.showInputDialog(null, "What is the name of item?", "Item Name", JOptionPane.QUESTION_MESSAGE);
-							if(itemName!=null && !itemName.trim().isEmpty()) {
+							final String itemName = JOptionPane.showInputDialog(null, "What is the name of the item?", "Item Name", JOptionPane.QUESTION_MESSAGE);
+							if(itemName != null && !itemName.trim().isEmpty()) {
 								//	Rename the file.
 								boolean exists = true;
 								File newFile = new File(file.getParent() + "//ROTMG " + dropOptions[dropType].toUpperCase() + " " + dropDate + " (" + itemName.trim() + ")" + fileExt);
@@ -153,7 +155,7 @@ public class GUI extends JFrame {
 		textField.setBorder(null);
 		textField.setFocusable(false);
 		textField.setFont(new Font("Calibri", Font.PLAIN, 24));
-		textField.setText("Drag and drop the screenshot here!");
+		textField.setText(defaultText);
 		contentPane.add(textField);
 		
 		//	Setup Timer
